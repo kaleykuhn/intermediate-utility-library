@@ -1,7 +1,7 @@
 // Your functions go here
 var count = 0;
 function countingCards(card) {
-   // <----- added curly brace
+   //
    switch (card) {
       case 2:
       case 3:
@@ -23,7 +23,7 @@ function countingCards(card) {
    } else {
       return count + " Hold"; // <---- added space before Hold
    }
-} // <----- added curly brace
+}
 
 /*var count = 0;
 
