@@ -135,3 +135,12 @@ function generateRanNumRange(myMax, myMin) {
 
    return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
 }
+var spliceArray = [2, 3, 4, 5, 6, 7, 8];
+
+function splice(pos1, pos2) {
+   let array = spliceArray;
+   console.log(spliceArray);
+   let newArray = array.splice(pos1, pos2);
+   console.log(newArray);
+   return newArray;
+}
