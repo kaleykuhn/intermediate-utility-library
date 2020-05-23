@@ -162,3 +162,10 @@ function spliceAdd(ind, num, ele) {
 
    return array;
 }
+
+var indexArray = ["squash", "onions", "shallots"];
+var element = "mushrooms";
+function checkPresEleIndex(arr, elem) {
+   console.log(indexArray);
+   console.log(element);
+}
