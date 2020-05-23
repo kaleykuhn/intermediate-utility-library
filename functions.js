@@ -1,7 +1,8 @@
 // Your functions go here
 var count = 0;
 function countingCards(card) {
-   //
+   // A1: card
+   // R: Bet and Hold
    switch (card) {
       case 2:
       case 3:
@@ -68,3 +69,61 @@ function cc(card) {
     return count + "  Hold";  
   }
 }*/
+var contacts = [
+   {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+   },
+   {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+   },
+   {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+   },
+   {
+      firstName: "Kristian",
+      lastName: "Vos",
+      number: "unknown",
+      likes: ["JavaScript", "Gaming", "Foxes"],
+   },
+];
+
+/*function lookUpProfile(name, prop) {
+   //A1: name
+   //A2: property
+   //R: Name of  property, or No such contact, or No such property
+   for (var i = 0; i < contacts.length; i++) {
+      var singleContactObj = contacts[i];
+      var firstName = singleContactObj.firstName;
+      if (firstName === name) {
+         if (singleContactObj.hasOwnProperty(prop)) {
+            return singleContactObj[prop];
+         } else return "No such property.";
+      }
+   }
+
+   return "No such contact.";
+}*/
+function lookUpProfile(name, prop) {
+   for (var i = 0; i < contacts.length; i++) {
+      var singleContactObj = contacts[i];
+      var firstName = singleContactObj.firstName;
+      if (firstName === name) {
+         if (singleContactObj.hasOwnProperty(prop)) {
+            console.log(firstName);
+            return singleContactObj[prop];
+         } else {
+            return "No such property.";
+         }
+      }
+   }
+   return "No such contact.";
+}
