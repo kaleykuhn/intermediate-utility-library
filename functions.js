@@ -174,3 +174,9 @@ function checkPresEleIndex(arr, elem) {
    //inequality operator used because index starts at 0 so -1 would be undefined
    return arr.indexOf(elem) != -1;
 }
+
+function checkTypeOfVar(input1) {
+   var type1 = input1;
+   console.log(typeof type1);
+   return typeof type1;
+}
