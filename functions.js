@@ -127,3 +127,6 @@ function lookUpProfile(name, prop) {
    }
    return "No such contact.";
 }
+function generateRandomWholeNumbers() {
+   var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+}
