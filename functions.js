@@ -144,3 +144,21 @@ function splice(pos1, pos2) {
    console.log(newArray);
    return newArray;
 }
+var spliceAddArray = [
+   "DarkGoldenRod",
+   "WhiteSmoke",
+   "LavenderBlush",
+   "PaleTurquoise",
+   "FireBrick",
+];
+function spliceAdd(ind, num, ele) {
+   //A1:startindex
+   //A2:num to delete
+   //A3: element to switch out
+   //R: spliced array
+   let array = spliceAddArray;
+   console.log(spliceAddArray);
+   var newArray = array.splice(ind, num, ele);
+
+   return array;
+}
