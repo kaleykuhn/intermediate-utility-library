@@ -164,8 +164,13 @@ function spliceAdd(ind, num, ele) {
 }
 
 var indexArray = ["squash", "onions", "shallots"];
-var element = "mushrooms";
+//var indexEle = "mushrooms";
 function checkPresEleIndex(arr, elem) {
    console.log(indexArray);
-   console.log(element);
+   //console.log(indexEle);
+   //let arr = indexArray;
+   //console.log(arr);
+   //target array through index and check if elements exists
+   //inequality operator used because index starts at 0 so -1 would be undefined
+   return arr.indexOf(elem) != -1;
 }
